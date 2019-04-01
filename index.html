@@ -12,6 +12,16 @@
 
     <title>Quick Pick</title>
   </head>
+  <script>
+  		
+  	if (window.innerWidth<1000px) {
+  		document.getElementById('id1').onmouseover='.';
+  		document.getElementById('id1').onclick='.';
+  		document.getElementById('id2').onclick='.';
+  	}
+
+  	
+  </script>
   <body><div id="body">
     <nav class="navbar navbar-expand navbar-transparent fixed-top" style="width: 100%;" id="navbar">
   <a class="navbar-brand" href="#" style="font-size: 1.5vw;"><b>Quick Pick Services</b></a>
@@ -33,30 +43,30 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="font-size: 1.5vw;width: 15vw;height: 3.1vw">
-      <button class="btn btn-success my-2 my-sm-0" type="submit" style="font-size: 1.5vw;width: 10vw;height: 3.1vw;padding-bottom: 2.7vw;"><center>Search</center></button>
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="font-size: 1.5vw;width: 10vw;height: 2.5vw;">
+      <button class="btn btn-success" type="submit" style="font-size: 1.5vw;width: 6vw;height: 2.5vw;"><p style="margin-top: -5px;">Go</p></button>
     </form>
   </div>
 </nav>
- <div id="carouselExample" class="carousel slide" data-ride="carousel" style="width: 100%;">
+ <div id="carouselExample" class="carousel slide" data-ride="carousel" style="width: 100%;height: 100%;">
   <ol class="carousel-indicators">
     <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExample" data-slide-to="1"></li>
     <li data-target="#carouselExample" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner" onmouseover="document.getElementById('demo').style.height='44.4vw';document.getElementById('demo').style.transition='1s ease';document.getElementById('demo1').style.height='44.4vw';document.getElementById('demo1').style.transition='1s ease';document.getElementById('demo2').style.height='44.4vw';document.getElementById('demo2').style.transition='1s ease';">
+  <div id="id1" class="carousel-inner" onmouseover="document.getElementById('demo').style.height='44.4vw';document.getElementById('demo').style.transition='1s ease';document.getElementById('demo1').style.height='44.4vw';document.getElementById('demo1').style.transition='1s ease';document.getElementById('demo2').style.height='44.4vw';document.getElementById('demo2').style.transition='1s ease';" onclick="document.getElementById('demo').style.height='44.4vw';document.getElementById('demo').style.transition='1s ease';document.getElementById('demo1').style.height='44.4vw';document.getElementById('demo1').style.transition='1s ease';document.getElementById('demo2').style.height='44.4vw';document.getElementById('demo2').style.transition='1s ease';">
     <div class="carousel-item active" data-interval="10000" id="demo" style="height:44.4vw;">
-      <img src="image1.jpg" class="d-block w-100" alt="image1"><div class="carousel-caption" style="font-size: 1.5vw;text-align: left;padding-right: 27vw;padding-top: 20px;"><h4>First button</h4><p>
+      <img src="image1.jpg" class="d-block w-100" alt="image1"><div class="carousel-caption" style="font-size: 1.5vw;text-align: left;padding-right: 27vw;padding-top: 20px;"><p style="font-size: 2vw;"><b>First button</b></p><p>
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid.<br><br><button class="btn btn-success" style="font-size: 1.5vw;">School Services</button>
       </p></div>
     </div>
     <div class="carousel-item" data-interval="10000" id="demo1" style="height:44.4vw;">
-      <img src="image2.jpg" class="d-block w-100" alt="image2"><div class="carousel-caption" style="font-size: 1.5vw;text-align: left;padding-right: 27vw;color: black;padding-top: 20px;"><h4>Second Button</h4><p>
+      <img src="image2.jpg" class="d-block w-100" alt="image2"><div class="carousel-caption" style="font-size: 1.5vw;text-align: left;padding-right: 27vw;color: black;padding-top: 5vw;"><p style="font-size: 2vw;"><b>Second Button</b></p><p>
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid.<br><br><button class="btn btn-success" style="font-size: 1.5vw;">Daily Services</button>
       </p></div>
     </div>
     <div class="carousel-item" data-interval="10000" id="demo2" style="height:44.4vw;">
-      <img src="image3.jpg" class="d-block w-100" alt="image3"><div class="carousel-caption" style="font-size: 1.5vw;text-align: left;padding-right: 27vw;color: black;padding-top: 20px;"><h4>Third Slide</h4><p>
+      <img src="image3.jpg" class="d-block w-100" alt="image3"><div class="carousel-caption" style="font-size: 1.5vw;text-align: left;padding-right: 27vw;color: black;padding-top: 5vw;"><p style="font-size: 2vw;"><b>Third Slide</b></p><p>
       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid.<br><br><button class="btn btn-success" style="font-size: 1.5vw;">Shopping Services</button>
     </p></div>
     </div>
@@ -75,16 +85,16 @@
   <div class="card">
     <div class="card-header" id="headingOne" style="padding:0px;border-radius: 0px;">
       <h2 class="mb-0"><center>
-        <button class="btn btn-lg btn-block" style="border-radius:0px;font-size:1.5vw;color:white;background-color: black;" type="button" data-toggle="collapse" onclick="document.getElementById('demo').style.height='28vw';document.getElementById('demo').style.transition='1s ease';document.getElementById('demo1').style.height='28vw';document.getElementById('demo1').style.transition='1s ease';document.getElementById('demo2').style.height='28vw';document.getElementById('demo2').style.transition='1s ease';" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button id="id2" class="btn btn-lg btn-block" style="border-radius:0px;font-size:1.5vw;color:white;background-color: black;" type="button" data-toggle="collapse" onclick="document.getElementById('demo').style.height='28vw';document.getElementById('demo').style.transition='1s ease';document.getElementById('demo1').style.height='28vw';document.getElementById('demo1').style.transition='1s ease';document.getElementById('demo2').style.height='28vw';document.getElementById('demo2').style.transition='1s ease';" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Services Available
         </button></center>
       </h2>
     </div>
 
     <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body" style="padding: 40px 100px 20px 100px;height: auto;">
+      <div class="card-body" style="padding: 2vw 10vw 5vw 10vw;height: auto;">
         <center>
-      	<button class="btn btn-info" style="border-radius:3vw;padding-right: 1.3vw;padding-left: 1.3vw;font-size: 1.5vw;">School Services</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btn btn-warning" style="border-radius:3vw;padding-right: 1.3vw;padding-left: 1.3vw;font-size: 1.5vw;">Daily Services</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btn btn-danger" style="border-radius:3vw;padding-right: 1.3vw;padding-left: 1.3vw;font-size: 1.5vw;">Shopping Services</button>
+      	<button class="btn btn-info" style="border-radius:3vw;padding-right: 1.3vw;padding-left: 1.3vw;font-size: 1.5vw;">School Services</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btn btn-warning" style="border-radius:3vw;padding-right: 1.3vw;padding-left: 1.3vw;font-size: 1.5vw;">Daily Services</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btn btn-danger" style="border-radius:3vw;padding-right: 1.3vw;padding-left: 1.3vw;font-size: 1.5vw;">Shopping Services</button>
       <br><p style="padding:1vw 14vw 1vw 14vw;font-size: 1.5vw;">
       For Membership related queries pleases visit the service page of the services you want membership and there you will find the relative details of the pricing and payment. <br><hr style="width: 70%;">
       </p></center>
